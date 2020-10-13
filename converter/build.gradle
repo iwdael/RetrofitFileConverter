@@ -1,0 +1,20 @@
+apply plugin: 'java-library'
+apply plugin: 'com.novoda.bintray-release'
+
+dependencies {
+    compileOnly 'com.squareup.retrofit2:retrofit:2.4.0'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+publish {
+    userOrg = 'hacknife'
+    groupId = 'com.hacknife.retrofit2'
+    artifactId = 'converter-file'
+    publishVersion = "${bintrayVer}"
+    bintrayUser = 'hacknife'
+    bintrayKey = "${bintrayKey}"
+    desc = ''
+    website = 'https://github.com/hacknife/RetrofitFileConverter'
+}
