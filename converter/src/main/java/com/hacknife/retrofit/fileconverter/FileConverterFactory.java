@@ -29,7 +29,7 @@ public class FileConverterFactory extends Converter.Factory {
             if (!(annotation instanceof FileName)) continue;
             String value = ((FileName) annotation).value();
             if (value.contains("."))
-                fileName = value.substring(0, value.indexOf(".")) + "_" + System.currentTimeMillis() + value.substring(value.indexOf("."));
+                fileName = value.substring(0, value.lastIndexOf(".")) + "_" + System.currentTimeMillis() + value.substring(value.lastIndexOf("."));
             else
                 fileName = value + "_" + System.currentTimeMillis();
             break;
