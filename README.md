@@ -42,6 +42,6 @@ interface Api {
 ```Java
 	dependencies {
 	  ...
-          compile 'com.iwdael:retrofitfileconverer:$version'
+          compile 'com.iwdael:retrofitfileconverter:$version'
 	}
 ```
